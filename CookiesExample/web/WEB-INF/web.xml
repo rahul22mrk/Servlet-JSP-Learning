@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>TimeTableServlet</servlet-name>
+        <servlet-class>TimeTableServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SyllabusServlet</servlet-name>
+        <servlet-class>SyllabusServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LabScheduleServlet</servlet-name>
+        <servlet-class>LabScheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TimeTableServlet</servlet-name>
+        <url-pattern>/TimeTableServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SyllabusServlet</servlet-name>
+        <url-pattern>/SyllabusServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LabScheduleServlet</servlet-name>
+        <url-pattern>/LabScheduleServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
